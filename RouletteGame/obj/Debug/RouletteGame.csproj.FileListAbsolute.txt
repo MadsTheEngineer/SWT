@@ -1,0 +1,10 @@
+C:\# OFFLINE WORK\Courses\4\I4SWT\EXERCISES\6 - Stubs\SC for RouletteGame handout\RouletteGame\bin\Debug\RouletteGame.dll
+C:\# OFFLINE WORK\Courses\4\I4SWT\EXERCISES\6 - Stubs\SC for RouletteGame handout\RouletteGame\bin\Debug\RouletteGame.pdb
+C:\# OFFLINE WORK\Courses\4\I4SWT\EXERCISES\6 - Stubs\SC for RouletteGame handout\RouletteGame\obj\Debug\ResolveAssemblyReference.cache
+C:\# OFFLINE WORK\Courses\4\I4SWT\EXERCISES\6 - Stubs\SC for RouletteGame handout\RouletteGame\obj\Debug\RouletteGame.dll
+C:\# OFFLINE WORK\Courses\4\I4SWT\EXERCISES\6 - Stubs\SC for RouletteGame handout\RouletteGame\obj\Debug\RouletteGame.pdb
+C:\# OFFLINE WORK\Courses\4\I4SWT\EXERCISES\4.2 - Fakes 1 (stubs)\SC for RouletteGame handout\RouletteGame\bin\Debug\RouletteGame.dll
+C:\# OFFLINE WORK\Courses\4\I4SWT\EXERCISES\4.2 - Fakes 1 (stubs)\SC for RouletteGame handout\RouletteGame\bin\Debug\RouletteGame.pdb
+C:\# OFFLINE WORK\Courses\4\I4SWT\EXERCISES\4.2 - Fakes 1 (stubs)\SC for RouletteGame handout\RouletteGame\obj\Debug\RouletteGame.csprojResolveAssemblyReference.cache
+C:\# OFFLINE WORK\Courses\4\I4SWT\EXERCISES\4.2 - Fakes 1 (stubs)\SC for RouletteGame handout\RouletteGame\obj\Debug\RouletteGame.dll
+C:\# OFFLINE WORK\Courses\4\I4SWT\EXERCISES\4.2 - Fakes 1 (stubs)\SC for RouletteGame handout\RouletteGame\obj\Debug\RouletteGame.pdb
