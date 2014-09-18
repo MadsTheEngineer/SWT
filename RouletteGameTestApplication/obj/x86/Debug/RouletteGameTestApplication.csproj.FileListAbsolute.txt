@@ -14,3 +14,10 @@ C:\# OFFLINE WORK\Courses\4\I4SWT\EXERCISES\4.2 - Fakes 1 (stubs)\SC for Roulett
 C:\# OFFLINE WORK\Courses\4\I4SWT\EXERCISES\4.2 - Fakes 1 (stubs)\SC for RouletteGame handout\RouletteGameTestApplication\obj\x86\Debug\RouletteGameTestApplication.csprojResolveAssemblyReference.cache
 C:\Users\Caau\Dropbox\IHA\SWT\04.2 Fakes 1\RouletteGame handout\RouletteGameTestApplication\obj\x86\Debug\RouletteGameTestApplication.exe
 C:\Users\Caau\Dropbox\IHA\SWT\04.2 Fakes 1\RouletteGame handout\RouletteGameTestApplication\obj\x86\Debug\RouletteGameTestApplication.pdb
+C:\Users\Caau\Dropbox\IHA\SWT\04.2 Fakes 1\RouletteGame handout\SWT\RouletteGameTestApplication\obj\x86\Debug\RouletteGameTestApplication.exe
+C:\Users\Caau\Dropbox\IHA\SWT\04.2 Fakes 1\RouletteGame handout\SWT\RouletteGameTestApplication\obj\x86\Debug\RouletteGameTestApplication.pdb
+C:\Users\Caau\Dropbox\IHA\SWT\04.2 Fakes 1\RouletteGame handout\SWT\RouletteGameTestApplication\bin\Debug\RouletteGameTestApplication.exe
+C:\Users\Caau\Dropbox\IHA\SWT\04.2 Fakes 1\RouletteGame handout\SWT\RouletteGameTestApplication\bin\Debug\RouletteGameTestApplication.pdb
+C:\Users\Caau\Dropbox\IHA\SWT\04.2 Fakes 1\RouletteGame handout\SWT\RouletteGameTestApplication\bin\Debug\RouletteGame.dll
+C:\Users\Caau\Dropbox\IHA\SWT\04.2 Fakes 1\RouletteGame handout\SWT\RouletteGameTestApplication\bin\Debug\RouletteGame.pdb
+C:\Users\Caau\Dropbox\IHA\SWT\04.2 Fakes 1\RouletteGame handout\SWT\RouletteGameTestApplication\obj\x86\Debug\RouletteGameTestApplication.csprojResolveAssemblyReference.cache

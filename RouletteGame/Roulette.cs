@@ -7,6 +7,7 @@ namespace RouletteGame
 {
     public class Roulette
     {
+        private bool lol;
         private List<Field> _fields;
         private Field _result;
 
