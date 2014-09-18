@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("RouletteGameTestApplication")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("IHA")]
+[assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("RouletteGameTestApplication")]
-[assembly: AssemblyCopyright("Copyright © IHA 2012")]
+[assembly: AssemblyCopyright("Copyright ©  2014")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("94d27d4b-9375-420f-aac1-e1a3dcc5cc92")]
+[assembly: Guid("e08ed6a4-b2f5-4de5-acf6-18bc330574e4")]
 
 // Version information for an assembly consists of the following four values:
 //
