@@ -19,7 +19,7 @@ namespace RouletteGameTestApplication
             game.PlaceBet(new EvenOddBet("Player 2", 100, false));
 
             for (uint i = 0; i < 36; i++)
-                game.PlaceBet(new FieldBet("Player 3", 100, i));
+                game.PlaceBet(new NumberBet("Player 3", 100, i));
             
             game.CloseBets();
             game.SpinRoulette();
