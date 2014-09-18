@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("RouletteGame")]
+[assembly: AssemblyTitle("ClassLibrary1")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("IHA")]
-[assembly: AssemblyProduct("RouletteGame")]
-[assembly: AssemblyCopyright("Copyright © IHA 2012")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("ClassLibrary1")]
+[assembly: AssemblyCopyright("Copyright ©  2014")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("754446c2-59a9-4709-97fa-5f8eef4c03c1")]
+[assembly: Guid("686240e8-da62-4f26-845a-12a1a561dece")]
 
 // Version information for an assembly consists of the following four values:
 //

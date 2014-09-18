@@ -1,4 +1,0 @@
-SWT
-===
-
-Software Test ASE
