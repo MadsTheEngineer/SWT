@@ -23,18 +23,17 @@ namespace RouletteGame
             _amount = amount;
         }
 
-
         public string PlayerName    { get { return _playerName; }   }
         public uint Amount          { get { return _amount;     }   }
 
         public virtual uint WonAmount(Field field)  { return 0; }
     }
 
-    public class FieldBet : Bet
+    public class NumberBet : Bet
     {
         private readonly uint _fieldNumber;
 
-        public FieldBet(string name, uint amount, uint fieldNumber) : base(name, amount)
+        public NumberBet(string name, uint amount, uint fieldNumber) : base(name, amount)
         {
             _fieldNumber = fieldNumber;
         }
