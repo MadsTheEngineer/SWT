@@ -55,7 +55,7 @@ namespace RouletteGameUnitTests
             //Act
             _uut.PlaceBet(new FakeBet());
             //Assert
-            
+
         }
     }
 }
