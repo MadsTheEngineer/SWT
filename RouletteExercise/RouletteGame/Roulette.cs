@@ -5,7 +5,7 @@ using System.Text;
 
 namespace RouletteGame
 {
-    public class Roulette
+    public class Roulette : IRoulette
     {
         private List<Field> _fields;
         private Field _result;
