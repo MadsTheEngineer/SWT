@@ -38,5 +38,19 @@ namespace RouletteGameUnitTests
             //Assert
             Assert.AreEqual(0, returnValue);
         }
+        
+        [Test]
+        public void ToString_Amount10AndField7_10And7InsertedInString()
+        {
+            //Arrange
+            NumberBet uut = new NumberBet("Otto Leisner", 10, 7); //amount = 10, field number =7            
+
+            //Act
+            var returnValue = uut.ToString();
+
+            //Assert
+            Assert.AreEqual("10$ field bet on 7", returnValue);
+        }
+        
     }
 }
