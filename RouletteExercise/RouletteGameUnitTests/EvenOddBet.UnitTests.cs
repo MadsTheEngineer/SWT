@@ -68,7 +68,7 @@ namespace RouletteGameUnitTests
         }
 
         [Test]
-        public void ToString_InsertedInString()
+        public void ToString_ColorInsertedInString()
         {
             //Arrange
             NumberBet uut = new NumberBet("Otto Leisner", 10, 7); //amount = 10, field number =7            
