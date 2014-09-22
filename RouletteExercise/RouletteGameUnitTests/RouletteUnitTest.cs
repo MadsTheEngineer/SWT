@@ -15,8 +15,9 @@ namespace RouletteGameUnitTests
         [SetUp]
         public void RunBeforeTests()
         {
-            _uut = new Roulette();
+            _uut = new Roulette(new FakeRandomize());
         }
+        
 
         [Test]
         public void Constructor_ResultIsFieldZero_FieldNumberIsZero()
@@ -25,6 +26,14 @@ namespace RouletteGameUnitTests
             Assert.That(number,Is.EqualTo(0));
         }
 
-        // Laver en fake af 
+        // Laver en fake af Randomize
+        class FakeRandomize : IRandomize
+        {
+            public int RandomInt(int from, int to)
+            {
+                var n = (int)new System.Random().Next(from, to);
+                return n;
+            }
+        }
     }
 }
