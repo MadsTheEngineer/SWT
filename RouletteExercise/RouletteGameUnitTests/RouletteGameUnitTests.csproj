@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="RouletteUnitTest.cs" />
     <Compile Include="ColorBet.UnitTests.cs" />
     <Compile Include="EvenOddBet.UnitTests.cs" />
     <Compile Include="NumberBet.UnitTests.cs" />

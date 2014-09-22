@@ -9,9 +9,11 @@ namespace RouletteGame
     {
         private List<Field> _fields;
         private Field _result;
+        private IRandomize _randomize;
 
-        public Roulette()
+        public Roulette(IRandomize randomizer)
         {
+            _randomize = randomizer;
             _fields = new List<Field>
                           {
                               new Field(0, Field.Green),
@@ -58,7 +60,7 @@ namespace RouletteGame
 
         public void Spin()
         {
-            var n = (uint) new System.Random().Next(0,37);
+            var n = (uint) _randomize.RandomInt(0, 37);
             _result = _fields[(int) n];
         }
 
