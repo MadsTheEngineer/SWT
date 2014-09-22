@@ -11,7 +11,7 @@ namespace RouletteGame
         void Render(string s);
     }
 
-    public class ConsoleDevice
+    public class ConsoleDevice : IOutputDevice
     {
         public void Render(string s)
         {
