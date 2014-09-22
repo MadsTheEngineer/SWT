@@ -8,17 +8,14 @@ namespace RouletteGame
 {
     public interface IOutputDevice
     {
-        void Render(params string[] s);
+        void Render(string s);
     }
 
     public class ConsoleDevice
     {
         public void Render(string s)
         {
-            foreach (char t in s)
-            {
-                Console.WriteLine(t);
-            }
+            Console.WriteLine(s);
         }
     }
 }

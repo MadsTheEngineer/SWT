@@ -17,7 +17,7 @@ namespace RouletteGameUnitTests
         [SetUp]
         public void RunBeforeTests()
         {
-            _uut = new RouletteGameClass(new FakeRoulette());
+            _uut = new RouletteGameClass(new FakeRoulette(),new FakeOutputDevice());
         }
 
         //Fields to return
@@ -32,6 +32,15 @@ namespace RouletteGameUnitTests
             public Field GetResult()
             {
                 return ReturnField;
+            }
+        }
+
+        class FakeOutputDevice : IOutputDevice
+        {
+            public string ReceivedString { get; set; }
+            public void Render(string s)
+            {
+                ReceivedString = s;
             }
         }
 
