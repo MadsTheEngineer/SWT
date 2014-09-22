@@ -41,6 +41,7 @@
   <ItemGroup>
     <Compile Include="Bet.cs" />
     <Compile Include="Field.cs" />
+    <Compile Include="IRandom.cs" />
     <Compile Include="OutputDevices.cs" />
     <Compile Include="IRoulette.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
