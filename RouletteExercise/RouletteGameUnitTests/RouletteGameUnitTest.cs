@@ -24,7 +24,6 @@ namespace RouletteGameUnitTests
         Field greenAndEvenField = new Field(0, Field.Green);
         Field redAndUnevenField = new Field(1, Field.Red);
         Field blackAndEvenField = new Field(2, Field.Black);
-        Field redField = new Field(1, Field.Red);
         class FakeRoulette : IRoulette
         {
             Field ReturnField { get; set; }
@@ -47,15 +46,37 @@ namespace RouletteGameUnitTests
         }
 
         [Test]
-        [ExpectedException(typeof (RouletteGameException))]
+        public void PlaceBet_RoundIsClosedAsDefault_RouletteGameExeption()
+        {
+            //Arrange
+
+            //Act
+
+            //Assert
+            Assert.That( () => _uut.PlaceBet(new FakeBet()), Throws.TypeOf<RouletteGameException>());
+        }
+
+        [Test]
+        public void PlaceBet_RoundIsOpen_NoExeption()
+        {
+            //Arrange
+
+            //Act
+            _uut.OpenBets();
+            //Assert
+            Assert.That( () => _uut.PlaceBet(new FakeBet()), Throws.Nothing);
+        }
+
+        [Test]
         public void PlaceBet_RoundIsClosed_RouletteGameExeption()
         {
             //Arrange
 
             //Act
-            _uut.PlaceBet(new FakeBet());
+            _uut.OpenBets();
+            _uut.CloseBets();
             //Assert
-
+            Assert.That(() => _uut.PlaceBet(new FakeBet()), Throws.TypeOf<RouletteGameException>());
         }
     }
 }

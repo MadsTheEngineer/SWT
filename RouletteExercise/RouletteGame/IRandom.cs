@@ -5,7 +5,7 @@ namespace RouletteGame
         int RandomInt(int from, int to);
     }
 
-    class Randomize : IRandomize
+    public class Randomize : IRandomize
     {
         public int RandomInt(int from, int to)
         {
