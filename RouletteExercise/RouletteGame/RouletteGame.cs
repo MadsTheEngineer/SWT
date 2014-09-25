@@ -41,7 +41,7 @@ namespace RouletteGame
         {
             _outputDevice.Render("Spinning...");
             _roulette.Spin();
-            _outputDevice.Render(String.Format("Result: {0}", _roulette.GetResult()));
+            _outputDevice.Render("Result: {0}", _roulette.GetResult());
         }
 
         public void PayUp()
@@ -52,7 +52,7 @@ namespace RouletteGame
             {
                 var won = bet.WonAmount(result);
                 if(won > 0)
-                    _outputDevice.Render(String.Format("{0} just won {1}$ on a {2}", bet.PlayerName, won, bet));
+                    _outputDevice.Render("{0} just won {1}$ on a {2}", bet.PlayerName, won, bet);
             }
         }
 
