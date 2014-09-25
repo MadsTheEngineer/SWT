@@ -14,10 +14,14 @@ namespace RouletteGameUnitTests
     public class RouletteGameUnitTest
     {
         private RouletteGameClass _uut;
+        private FakeRoulette _fakeRoulette;
+        private FakeOutputDevice _fakeOutputDevice;
         [SetUp]
         public void RunBeforeTests()
         {
-            _uut = new RouletteGameClass(new FakeRoulette(),new FakeOutputDevice());
+            _fakeRoulette = new FakeRoulette();
+            _fakeOutputDevice = new FakeOutputDevice();
+            _uut = new RouletteGameClass(_fakeRoulette,_fakeOutputDevice);
         }
 
         //Fields to return
@@ -38,10 +42,11 @@ namespace RouletteGameUnitTests
         class FakeOutputDevice : IOutputDevice
         {
             public string ReceivedString { get; set; }
-            
+            public int TimesCalled { get; set;}
             public void Render(string format, params object[] arguments)
             {
                 ReceivedString = String.Format(format, arguments);
+                TimesCalled++;
             }
         }
 
@@ -78,7 +83,7 @@ namespace RouletteGameUnitTests
         }
 
         [Test]
-        public void PlaceBet_RoundIsClosed_RouletteGameExeption()
+        public void CloseBets_RoundIsClosed_RouletteGameExeption()
         {
             //Arrange
 
@@ -87,6 +92,16 @@ namespace RouletteGameUnitTests
             _uut.CloseBets();
             //Assert
             Assert.That(() => _uut.PlaceBet(new FakeBet()), Throws.TypeOf<RouletteGameException>());
+        }
+
+        [Test]
+        public void OpenBets_OpenBets_RenderCalled()
+        {
+            //Arrange
+            //Act
+            _uut.OpenBets();
+            //Assert
+            Assert.That(_fakeOutputDevice.TimesCalled,Is.EqualTo(1));
         }
     }
 }
