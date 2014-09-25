@@ -68,16 +68,17 @@ namespace RouletteGameUnitTests
         }
 
         [Test]
-        public void ToString_ColorInsertedInString()
+        public void ToString_Amount10ColorRed_10AndRedInString()
         {
             //Arrange
-            NumberBet uut = new NumberBet("Otto Leisner", 10, 7); //amount = 10, field number =7            
+            EvenOddBet uut = new EvenOddBet("Otto Leisner", 10, true); //amount = 10, bet on even
 
             //Act
             var returnValue = uut.ToString();
 
             //Assert
-            Assert.AreEqual("10$ field bet on 7", returnValue);
+            Assert.AreEqual("10$ even/odd bet on even", returnValue);
         }
+        
     }
 }

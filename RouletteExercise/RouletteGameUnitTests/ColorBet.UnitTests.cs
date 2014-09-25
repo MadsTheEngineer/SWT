@@ -68,7 +68,7 @@ namespace RouletteGameUnitTests
         }
 
         [Test]
-        public void ToString_ColorSetToRed_ColorConatinedInString()
+        public void ToString_Amount10ColorRed_10AndRedInString()
         {
             //Arrange
             ColorBet uut = new ColorBet("Otto Leisner", 10, Field.Red); //amount = 10, color = red
@@ -79,7 +79,5 @@ namespace RouletteGameUnitTests
             //Assert
             Assert.AreEqual("10$ color bet on red", returnValue);
         }
-
-        //return string.Format("{0}$ color bet on {1}", Amount, colorString);
     }
 }
