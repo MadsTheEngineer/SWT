@@ -52,7 +52,7 @@ namespace RouletteGame
             {
                 var won = bet.WonAmount(result);
                 if(won > 0)
-                    _outputDevice.Render(String.Format("{0} just won {1}$ on a {2}", bet.PlayerName, won, bet));
+                    _outputDevice.Render("{0} just won {1}$ on a {2}", bet.PlayerName, won, bet);
             }
         }
 
