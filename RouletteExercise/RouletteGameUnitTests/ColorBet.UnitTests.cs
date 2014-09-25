@@ -40,7 +40,7 @@ namespace RouletteGameUnitTests
         }
 
         [Test] // red, black, green
-        public void WonAmount_FieldColorIsGreenAndBetColorIsGreenAndAmountEquals10_ResultEquals20() // test for each color?
+        public void WonAmount_FieldColorIsGreenAndBetColorIsGreenAndAmountEquals10_ResultEquals20() 
         {
             //Arrange
             ColorBet uut = new ColorBet("Otto Leisner", 10, Field.Green); //amount = 10, color = 0
@@ -54,7 +54,7 @@ namespace RouletteGameUnitTests
         }
 
         [Test]
-        public void WonAmount_FieldColorDoesNotEqualBetColor_ResultEqualsZero()
+        public void WonAmount_FieldColorDoesNotEqualBetColor_ResultEqualsZero() // test for every color combination?
         {
             //Arrange
             ColorBet uut = new ColorBet("Otto Leisner", 10, Field.Red); //amount = 10, color = 0
