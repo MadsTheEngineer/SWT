@@ -8,12 +8,12 @@ namespace RouletteGame
 {
     public interface IOutputDevice
     {
-        void Render(string s);
+        void Render(Object s);
     }
 
     public class ConsoleDevice : IOutputDevice
     {
-        public void Render(string s)
+        public void Render(Object s)
         {
             Console.WriteLine(s);
         }
