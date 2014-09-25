@@ -41,7 +41,7 @@ namespace RouletteGame
         {
             _outputDevice.Render("Spinning...");
             _roulette.Spin();
-            _outputDevice.Render(String.Format("Result: {0}", _roulette.GetResult()));
+            _outputDevice.Render("Result: {0}", _roulette.GetResult());
         }
 
         public void PayUp()

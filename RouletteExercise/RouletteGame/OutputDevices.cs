@@ -8,14 +8,15 @@ namespace RouletteGame
 {
     public interface IOutputDevice
     {
-        void Render(Object s);
+        void Render(params Object[] s);
     }
 
     public class ConsoleDevice : IOutputDevice
     {
-        public void Render(Object s)
+        public void Render(params Object[] s)
         {
             Console.WriteLine(s);
+            
         }
     }
 }

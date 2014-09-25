@@ -38,9 +38,9 @@ namespace RouletteGameUnitTests
         class FakeOutputDevice : IOutputDevice
         {
             public string ReceivedString { get; set; }
-            public void Render(string s)
+            public void Render(Object s)
             {
-                ReceivedString = s;
+                ReceivedString = s.ToString();
             }
         }
 
