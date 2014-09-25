@@ -60,7 +60,7 @@ namespace RouletteGame
 
         public void Spin()
         {
-            var n = _randomize.RandomInt(0, 37);
+            var n = _randomize.RandomInt(0, 36);
             _result = _fields[n];
         }
 
