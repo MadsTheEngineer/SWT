@@ -47,7 +47,7 @@ namespace RouletteGameUnitTests
             Assert.That(_uut.GetResult().Number, Is.EqualTo(36));
 
         }
-
+        #region Testcases
         [TestCase(0)]
         [TestCase(1)]
         [TestCase(2)]
@@ -84,6 +84,7 @@ namespace RouletteGameUnitTests
         [TestCase(33)]
         [TestCase(34)]
         [TestCase(35)]
+        #endregion
         [TestCase(36)]
         public void Fields_HaveRightNumber_HaveRightNumber(int n)
         {
