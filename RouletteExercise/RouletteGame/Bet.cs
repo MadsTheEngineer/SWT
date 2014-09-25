@@ -78,7 +78,6 @@ namespace RouletteGame
 
             return string.Format("{0}$ color bet on {1}", Amount, colorString);
         }
-
     }
 
     public class EvenOddBet : Bet
