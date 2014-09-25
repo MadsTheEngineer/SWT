@@ -10,7 +10,7 @@ namespace RouletteGameTestApplication
     {
         static void Main(string[] args)
         {
-            var game = new RouletteGame.RouletteGame(new Roulette(new Randomize()));
+            var game = new RouletteGame.RouletteGame(new Roulette(new Randomize()),new ConsoleDevice());
             game.OpenBets();
             game.PlaceBet(new ColorBet("Player 1", 100, Field.Black));
             game.PlaceBet(new ColorBet("Player 1", 100, Field.Red));

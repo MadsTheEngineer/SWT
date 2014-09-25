@@ -7,25 +7,27 @@ namespace RouletteGame
 {
     public class RouletteGame
     {
+        private IOutputDevice _outputDevice;
         private IRoulette _roulette;
         private bool _roundIsOpen;
         private List<IBet> _bets;
 
-        public RouletteGame(IRoulette roulette)
+        public RouletteGame(IRoulette roulette, IOutputDevice outputDevice)
         {
             _bets = new List<IBet>();
             _roulette = roulette;
+            _outputDevice = outputDevice;
         }
 
         public void OpenBets()
         {
-            Console.WriteLine("Round is open for bets");
+            _outputDevice.Render("Round is open for bets");
             _roundIsOpen = true;
         }
 
         public void CloseBets()
         {
-            Console.WriteLine("Round is closed for bets");
+            _outputDevice.Render("Round is closed for bets");
             _roundIsOpen = false;
         }
 
@@ -37,9 +39,9 @@ namespace RouletteGame
 
         public void SpinRoulette()
         {
-            Console.Write("Spinning...");
+            _outputDevice.Render("Spinning...");
             _roulette.Spin();
-            Console.WriteLine("Result: {0}", _roulette.GetResult());
+            _outputDevice.Render(String.Format("Result: {0}", _roulette.GetResult()));
         }
 
         public void PayUp()
@@ -50,7 +52,7 @@ namespace RouletteGame
             {
                 var won = bet.WonAmount(result);
                 if(won > 0)
-                    Console.WriteLine("{0} just won {1}$ on a {2}", bet.PlayerName, won, bet);
+                    _outputDevice.Render(String.Format("{0} just won {1}$ on a {2}", bet.PlayerName, won, bet));
             }
         }
 
