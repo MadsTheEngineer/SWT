@@ -17,6 +17,7 @@ namespace RouletteGameUnitTests
         {
             _uut = new Roulette(new FakeRandomize());
         }
+
         
 
         [Test]
@@ -31,8 +32,7 @@ namespace RouletteGameUnitTests
         {
             public int RandomInt(int from, int to)
             {
-                var n = (int)new System.Random().Next(from, to);
-                return n;
+                return from;
             }
         }
     }
